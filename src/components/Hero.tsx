@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Bitcoin, Shield, Zap } from "lucide-react";
 import heroImage from "@/assets/bitcoin-hero.jpg";
+import BitcoinLogo from '../assets/images/bitcoin-logo-bag-amarelo.png'; // Ajuste o caminho conforme a localização da imagem
+
 
 export const Hero = () => {
   return (
@@ -20,7 +22,7 @@ export const Hero = () => {
         <div className="animate-slide-up">
           <div className="flex justify-center mb-6">
             <div className="p-4 rounded-full bg-primary/10 animate-bitcoin-pulse">
-              <Bitcoin className="w-22 h-22 text-primary" />
+              <img src={BitcoinLogo} alt="Bitcoin Logo" className="w-12 h-12" />
             </div>
           </div>
           
