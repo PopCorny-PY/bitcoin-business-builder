@@ -25,7 +25,7 @@ export const Hero = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Transforme seu
+            TransfORME seu
             <span className="gradient-primary bg-clip-text text-transparent"> Negócio </span>
             com Bitcoin
           </h1>
