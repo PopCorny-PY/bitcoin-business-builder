@@ -14,7 +14,7 @@ export const Hero = () => {
           alt="Bitcoin entrepreneurship journey"
           className="w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 gradient-hero opacity-80"></div>
+        <div className="absolute inset-0 gradient-hero opacity-60"></div>
       </div>
       
       {/* Content */}
