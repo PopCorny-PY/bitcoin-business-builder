@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Bitcoin } from "lucide-react";
 import { Link } from "react-router-dom";
+import BitcoinLogo from '../assets/images/bitcoin-logo-shop-brand.png'; // Ajuste o caminho conforme a localização da imagem
+
 
 const Demo = () => {
   return (
@@ -44,10 +46,9 @@ const Demo = () => {
                 {/* Bitcoin Sign */}
                 <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 bg-white border-2 border-[#0A2540] rounded-lg p-3 shadow-lg">
                   <div className="flex items-center gap-2">
-                    <Bitcoin className="w-8 h-8 text-[#F7931A]" />
-                    <span className="font-bold italic text-[#F7931A] text-lg" style={{fontFamily: 'Ubuntu'}}>
-                      BITCOIN
-                    </span>
+                    <div className="p-4 rounded-full bg-white animate-bitcoin-pulse-pizza">
+                     <img src={BitcoinLogo} alt="Bitcoin Logo" className="w-13 h-12" />
+                    </div>
                   </div>
                 </div>
 
