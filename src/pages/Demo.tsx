@@ -55,7 +55,7 @@ const Demo = () => {
 
                 {/* Store Front */}
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold text-[#0A2540] mb-4">Pizzaria Bitcoin</h3>
+                  <h3 className="text-2xl font-bold text-[#0A2540] mb-4">PizzaDay Pizzaria </h3>
                   <div className="bg-[#F7931A] text-white p-4 rounded-lg">
                     <p className="font-semibold">Aceitamos Bitcoin!</p>
                     <p className="text-sm">Pagamentos instantâneos</p>
@@ -79,9 +79,9 @@ const Demo = () => {
             </div>
 
             {/* Cavalete */}
-            <div className="absolute bottom-24 right-28 z-15">
+            <div className="absolute bottom-24 right-35 z-10">
                 {/* Street Cavalete */}
-                <div className="p-3 animate-bitcoin-cavalete">
+                <div className="p-4 animate-bitcoin-cavalete">
                      <img src={Cavalete} alt="Cavalete" className="w-14 h-15" />
                 </div>
             </div>
