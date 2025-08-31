@@ -45,7 +45,7 @@ const Demo = () => {
                 
                 {/* Bitcoin Sign */}
                 <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 bg-white border-2 border-[#0A2540] rounded-lg p-3 shadow-lg">
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center">
                     <div className="p-4 rounded-full bg-white animate-bitcoin-pulse-pizza">
                      <img src={BitcoinLogo} alt="Bitcoin Logo" className="w-13 h-12" />
                     </div>
