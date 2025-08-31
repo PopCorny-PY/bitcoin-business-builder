@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Bitcoin } from "lucide-react";
 import { Link } from "react-router-dom";
 import BitcoinLogo from '../assets/images/bitcoin-logo-shop-brand.png'; // Ajuste o caminho conforme a localização da imagem
+import Cavalete from '../assets/images/cavalete.png'; // Ajuste o caminho conforme a localização da imagem
 
 
 const Demo = () => {
@@ -77,6 +78,15 @@ const Demo = () => {
               <div className="absolute top-1/2 left-0 right-0 h-1 bg-yellow-300 transform -translate-y-1/2"></div>
             </div>
 
+            {/* Cavalete */}
+            <div className="absolute bottom-24 right-40 z-20">
+                {/* Street lines */}
+                <div className="w-12 h-20 bg-white rounded-t-full relative"></div>
+                     <img src={Cavalete} alt="Cavalete" className="w-7 h-7" />
+                </div>
+            </div>
+
+            
             {/* Customer Scene */}
             <div className="absolute bottom-24 right-20 z-20">
               {/* Lady with purse */}
@@ -90,11 +100,11 @@ const Demo = () => {
                   {/* Bubble tail */}
                   <div className="absolute -bottom-2 left-6 w-4 h-4 bg-white border-r-2 border-b-2 border-[#0A2540] transform rotate-45"></div>
                 </div>
-                
+              
                 {/* Lady figure */}
                 <div className="w-12 h-20 bg-pink-200 rounded-t-full relative">
                   {/* Head */}
-                  <div className="w-8 h-8 bg-pink-300 rounded-full mx-auto mb-2"></div>
+                  <div className="w-8 h-8 bg-black-300 rounded-full mx-auto mb-2"></div>
                   {/* Body */}
                   <div className="w-10 h-12 bg-blue-200 rounded-lg mx-auto"></div>
                   {/* Purse */}
