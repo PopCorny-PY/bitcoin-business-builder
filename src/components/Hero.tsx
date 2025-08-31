@@ -12,7 +12,7 @@ export const Hero = () => {
         <img 
           src={heroImage} 
           alt="Bitcoin entrepreneurship journey"
-          className="w-full h-full object-cover opacity-50"
+          className="w-full h-full object-cover opacity-100"
         />
         <div className="absolute inset-0 gradient-hero opacity-60"></div>
       </div>
