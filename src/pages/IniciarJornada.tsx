@@ -90,6 +90,15 @@ const IniciarJornada = () => {
                 <li>• Crie um cronograma de implementação</li>
               </ul>
             </div>
+            <div className="space-y-5">
+              <h3 className="text-lg font-semibold text-secondary">3. Habilidades requeridas</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• Resiliência</li>
+                <li>• Mentoria com os colaboradores</li>
+                <li>• Busca contínua de networking</li>
+                <li>• Entender os princípios de finanças</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
