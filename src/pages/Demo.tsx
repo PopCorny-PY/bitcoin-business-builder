@@ -79,7 +79,7 @@ const Demo = () => {
             </div>
 
             {/* Cavalete */}
-            <div className="absolute bottom-24 right-45 z-18">
+            <div className="absolute bottom-24 right-28 z-15">
                 {/* Street Cavalete */}
                 <div className="p-3 animate-bitcoin-cavalete">
                      <img src={Cavalete} alt="Cavalete" className="w-14 h-15" />
@@ -102,13 +102,13 @@ const Demo = () => {
                 </div>
               
                 {/* Lady figure */}
-                <div className="w-12 h-20 bg-black rounded-t-full relative">
+                <div className="w-12 h-20 bg-pink-300 rounded-t-full relative">
                   {/* Head */}
                   <div className="w-8 h-8 bg-pink-200 rounded-full mx-auto mb-2"></div>
                   {/* Body */}
                   <div className="w-10 h-12 bg-blue-200 rounded-lg mx-auto"></div>
                   {/* Purse */}
-                  <div className="absolute right-0 top-8 w-4 h-6 bg-[#DC143C] rounded opacity-80"></div>
+                  <div className="absolute right-0 top-8 w-4 h-6 bg-[#DC143C] rounded opacity-90"></div>
                 </div>
               </div>
             </div>
