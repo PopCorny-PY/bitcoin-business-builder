@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Bitcoin, Github, Heart } from "lucide-react";
+import BitcoinLogo from '../assets/images/bitcoin-logo-bag-amarelo.png'; // Ajuste o caminho conforme a localização da imagem
 
 export const Footer = () => {
   return (
@@ -10,7 +11,7 @@ export const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="p-2 rounded-lg bg-primary/10">
-                <Bitcoin className="w-16 h-16 text-primary" />
+                <img src={BitcoinLogo} alt="Bitcoin Logo" className="w-12 h-12" />
               </div>
               <span className="text-xl font-bold">ShopCenter Bitcoin</span>
             </div>
@@ -72,7 +73,7 @@ export const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-secondary-foreground/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-secondary-foreground/60 text-sm">
-            © 2024 ShopCenter Bitcoin. Feito com{" "}
+            © 2025 ShopCenter Bitcoin. Feito com{" "}
             <Heart className="w-4 h-4 inline text-primary" />{" "}
             para a comunidade Bitcoin brasileira.
           </p>
