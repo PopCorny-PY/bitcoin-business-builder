@@ -91,12 +91,21 @@ const IniciarJornada = () => {
               </ul>
             </div>
             <div className="space-y-5">
-              <h3 className="text-lg font-semibold text-secondary">3. Habilidades requeridas</h3>
+              <h3 className="text-lg font-semibold text-secondary">3. Habilidades Requeridas</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li>• Resiliência</li>
                 <li>• Mentoria com os colaboradores</li>
                 <li>• Busca contínua de networking</li>
                 <li>• Entender os princípios de finanças</li>
+              </ul>
+            </div>
+            <div className="space-y-6">
+              <h3 className="text-lg font-semibold text-secondary">4. Ferramentas na Mochila</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• Calculadora com um visor de boa legibilidade</li>
+                <li>• Um PC/notebook com acesso à internet</li>
+                <li>• Um caderno de capa dura 96 fls</li>
+                <li>• Caneta de tinta de boa qualidade</li>
               </ul>
             </div>
           </div>
