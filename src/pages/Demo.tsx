@@ -81,7 +81,7 @@ const Demo = () => {
             {/* Cavalete */}
             <div className="absolute bottom-24 right-40 z-20">
                 {/* Street lines */}
-                <div className="w-12 h-20 bg-white rounded-t-full relative"></div>
+                <div className="p-1 rounded-full bg-white animate-bitcoin-cavalete">
                      <img src={Cavalete} alt="Cavalete" className="w-7 h-7" />
                 </div>
             </div>
