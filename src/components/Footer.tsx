@@ -10,9 +10,9 @@ export const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="p-2 rounded-lg bg-primary/10">
-                <Bitcoin className="w-6 h-6 text-primary" />
+                <Bitcoin className="w-16 h-16 text-primary" />
               </div>
-              <span className="text-xl font-bold">Bitcoin Business</span>
+              <span className="text-xl font-bold">ShopCenter Bitcoin</span>
             </div>
             <p className="text-secondary-foreground/80 mb-6">
               Transformando negócios locais com a liberdade financeira do Bitcoin. 
@@ -72,7 +72,7 @@ export const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-secondary-foreground/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-secondary-foreground/60 text-sm">
-            © 2024 Bitcoin Business Journey. Feito com{" "}
+            © 2024 ShopCenter Bitcoin. Feito com{" "}
             <Heart className="w-4 h-4 inline text-primary" />{" "}
             para a comunidade Bitcoin brasileira.
           </p>
