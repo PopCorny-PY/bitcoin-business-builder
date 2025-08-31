@@ -22,7 +22,7 @@ export const Hero = () => {
         <div className="animate-slide-up">
           <div className="flex justify-center mb-6">
             <div className="p-4 rounded-full bg-primary/10 animate-bitcoin-pulse">
-              <img src={BitcoinLogo} alt="Bitcoin Logo" className="w-15 h-15" />
+              <img src={BitcoinLogo} alt="Bitcoin Logo" className="w-7 h-7" />
             </div>
           </div>
           
