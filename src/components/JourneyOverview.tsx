@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BitcoinJourneyCard } from "./BitcoinJourneyCard";
 import { FeatureCard } from "./FeatureCard";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { 
   Wallet, 
   Settings, 
@@ -96,10 +97,17 @@ export const JourneyOverview = () => {
         <div className="space-y-6 mb-20">
           {journeySteps.map((step, index) => (
             <div key={step.id} className="animate-slide-up" style={{animationDelay: `${index * 0.1}s`}}>
-              <BitcoinJourneyCard
-                step={step}
+              <a 
+                href="https://www.areabitcoin.co" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 onClick={() => setSelectedStep(step.id)}
-              />
+              >
+                <BitcoinJourneyCard
+                  step={step}
+                  onClick={() => {}}
+                />
+              </a>
             </div>
           ))}
         </div>
@@ -116,16 +124,18 @@ export const JourneyOverview = () => {
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {features.map((feature, index) => (
-            <div key={feature.title} className="animate-fade-in" style={{animationDelay: `${index * 0.2}s`}}>
-              <FeatureCard
-                icon={feature.icon}
-                title={feature.title}
-                description={feature.description}
-                gradient={index % 2 === 0}
-              />
-            </div>
-          ))}
+          <Link to="/educacao-pratica">
+            <FeatureCard icon={BookOpen} title="Educação Prática" description="Conteúdo educativo com foco em aplicação real para negócios locais brasileiros." gradient={true} />
+          </Link>
+          <Link to="/seguranca-primeiro">
+            <FeatureCard icon={Shield} title="Segurança em Primeiro Lugar" description="Wallets não-custodiais e melhores práticas de segurança para proteger seu Bitcoin." gradient={false} />
+          </Link>
+          <Link to="/implementacao-simples">
+            <FeatureCard icon={Lightbulb} title="Implementação Simples" description="Ferramentas e tutoriais para implementar Bitcoin sem conhecimento técnico avançado." gradient={true} />
+          </Link>
+          <Link to="/foco-resultado">
+            <FeatureCard icon={Target} title="Foco no Resultado" description="Check-lists práticos para garantir que cada etapa seja concluída com sucesso." gradient={false} />
+          </Link>
         </div>
       </div>
     </section>

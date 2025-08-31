@@ -39,10 +39,12 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-              Iniciar Jornada
-              <ArrowRight className="w-5 h-5" />
-            </Button>
+            <Link to="/iniciar-jornada">
+              <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+                Iniciar Jornada
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </Link>
             <Link to="/demo">
               <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white/30 text-white hover:bg-gradient-to-l hover:from-[#0A2540]/80 hover:to-[#0A2540]/20 transition-all duration-500">
                 Ver Demonstração
@@ -52,18 +54,24 @@ export const Hero = () => {
           
           {/* Feature highlights */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-            <div className="flex items-center justify-center gap-3 p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-[#0A2540]/20 cursor-pointer">
-              <Shield className="w-6 h-6 text-primary-glow transition-colors duration-300 hover:text-[#0A2540]" />
-              <span className="text-white font-medium">Wallets Não-Custodiais</span>
-            </div>
-            <div className="flex items-center justify-center gap-3 p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-[#0A2540]/20 cursor-pointer">
-              <Zap className="w-6 h-6 text-primary-glow transition-colors duration-300 hover:text-[#0A2540]" />
-              <span className="text-white font-medium">Pagamentos Instantâneos</span>
-            </div>
-            <div className="flex items-center justify-center gap-3 p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-[#0A2540]/20 cursor-pointer">
-              <Bitcoin className="w-6 h-6 text-primary-glow transition-colors duration-300 hover:text-[#0A2540]" />
-              <span className="text-white font-medium">Open Source</span>
-            </div>
+            <Link to="/wallets-nao-custodiais">
+              <div className="flex items-center justify-center gap-3 p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-[#0A2540]/20 cursor-pointer">
+                <Shield className="w-6 h-6 text-primary-glow transition-colors duration-300 hover:text-[#0A2540]" />
+                <span className="text-white font-medium">Wallets Não-Custodiais</span>
+              </div>
+            </Link>
+            <Link to="/pagamentos-instantaneos">
+              <div className="flex items-center justify-center gap-3 p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-[#0A2540]/20 cursor-pointer">
+                <Zap className="w-6 h-6 text-primary-glow transition-colors duration-300 hover:text-[#0A2540]" />
+                <span className="text-white font-medium">Pagamentos Instantâneos</span>
+              </div>
+            </Link>
+            <Link to="/open-source">
+              <div className="flex items-center justify-center gap-3 p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-[#0A2540]/20 cursor-pointer">
+                <Bitcoin className="w-6 h-6 text-primary-glow transition-colors duration-300 hover:text-[#0A2540]" />
+                <span className="text-white font-medium">Open Source</span>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
