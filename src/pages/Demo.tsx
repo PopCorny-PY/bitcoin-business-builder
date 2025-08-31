@@ -79,10 +79,10 @@ const Demo = () => {
             </div>
 
             {/* Cavalete */}
-            <div className="absolute bottom-24 right-40 z-20">
+            <div className="absolute bottom-24 right-50 z-20">
                 {/* Street lines */}
                 <div className="p-1 rounded-full bg-white animate-bitcoin-cavalete">
-                     <img src={Cavalete} alt="Cavalete" className="w-7 h-7" />
+                     <img src={Cavalete} alt="Cavalete" className="w-12 h-15" />
                 </div>
             </div>
 
