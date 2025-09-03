@@ -1,13 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Bitcoin } from "lucide-react";
 import { Link } from "react-router-dom";
-import BitcoinLogo from '../assets/images/bitcoin-logo-shop-brand.png'; // Ajuste o caminho conforme a localização da imagem
-import Cavalete from '../assets/images/cavalete.png'; // Ajuste o caminho conforme a localização da imagem
+import { Header } from "@/components/Header";
+import BitcoinLogo from '../assets/images/bitcoin-logo-shop-brand.png';
+import Cavalete from '../assets/images/cavalete.png';
 
 
 const Demo = () => {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white dark:bg-secondary">
+      <Header />
       {/* Header */}
       <header className="bg-[#0A2540] text-white p-6">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
