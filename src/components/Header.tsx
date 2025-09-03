@@ -22,7 +22,7 @@ export const Header = () => {
   const { isDark, toggleTheme } = useTheme();
 
   return (
-    <header className="fixed top-0 right-0 z-50 p-6">
+    <header className="absolute top-6 right-6 z-50 hidden xl:block">
       <div className="flex items-center gap-3">
         {/* Language Selector */}
         <DropdownMenu>
