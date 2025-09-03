@@ -7,7 +7,7 @@ const EducacaoPratica = () => {
     <div className="min-h-screen bg-gradient-subtle">
       <div className="max-w-4xl mx-auto px-6 py-12">
         <Link to="/" className="inline-flex items-center gap-2 text-secondary hover:text-primary transition-smooth mb-8">
-          <ArrowLeft className="w-5 h-5" />
+          <ArrowLeft className="w-5 h-5" />git pull origin main
           Voltar para início
         </Link>
 
