@@ -2,12 +2,17 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Bitcoin, Shield, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/bitcoin-hero.jpg";
-import BitcoinLogo from '../assets/images/bitcoin-logo-shop-brand.png'; // Ajuste o caminho conforme a localização da imagem
+import BitcoinLogo from '../assets/images/bitcoin-logo-shop-brand.png';
+import { Header } from "@/components/Header";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 
 export const Hero = () => {
+  const { t } = useLanguage();
+  
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background to-secondary/20 dark:from-gray-900 dark:to-gray-800">
+      <Header />
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -29,27 +34,27 @@ export const Hero = () => {
             </div>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Transforme seu
-            <span className="gradient-primary bg-clip-text text-transparent"> Negócio </span>
-            com Bitcoin
+          <h1 className="text-5xl md:text-7xl font-bold text-white dark:text-gray-100 mb-6">
+            {t('hero.title1')}
+            <span className="gradient-primary bg-clip-text text-transparent"> {t('hero.title2')} </span>
+            {t('hero.title3')}
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Uma jornada guiada para implementar Bitcoin em seu negócio local. 
-            <strong> Sem custódia, sem intermediários, apenas liberdade financeira.</strong>
+          <p className="text-xl md:text-2xl text-white/90 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+            {t('hero.subtitle')} 
+            <strong> {t('hero.subtitle2')}</strong>
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Link to="/iniciar-jornada">
               <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-                Iniciar Jornada
+                {t('hero.startJourney')}
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </Link>
             <Link to="/demo">
               <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white/30 text-white hover:bg-gradient-to-l hover:from-[#0A2540]/80 hover:to-[#0A2540]/20 transition-all duration-500">
-                Ver Demonstração
+                {t('hero.viewDemo')}
               </Button>
             </Link>
           </div>

@@ -1,10 +1,12 @@
 import { ArrowLeft, Target, TrendingUp, BarChart3, DollarSign } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Header } from "@/components/Header";
 import illustration2 from "@/assets/illustration-2.png";
 
 const FocoResultado = () => {
   return (
-    <div className="min-h-screen bg-gradient-subtle">
+    <div className="min-h-screen bg-gradient-subtle dark:bg-secondary">
+      <Header />
       <div className="max-w-4xl mx-auto px-6 py-12">
         <Link to="/" className="inline-flex items-center gap-2 text-secondary hover:text-primary transition-smooth mb-8">
           <ArrowLeft className="w-5 h-5" />
